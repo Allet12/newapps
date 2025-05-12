@@ -15,7 +15,7 @@ const AfricanBankLogin = () => {
         setLoading(true);           
         try {
             const response = await axios.post(
-                'http://localhost:4000/user/register',
+                'https://newapps-1.onrender.com/user/register',
                 credentials
             );
             const { message, token } = response.data;
