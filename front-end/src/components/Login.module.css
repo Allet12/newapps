@@ -1,0 +1,107 @@
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+}
+
+.logoContainer {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bankLogo {
+    height: 70px;
+    width: auto;
+    margin: 0 auto 15px;
+}
+
+.welcome {
+    font-size: 24px;
+    color: #002b60;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.loginContainer {
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    padding: 25px;
+}
+
+.loginHeader {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.loginDetails {
+    color: #002b60;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.blueUnderline {
+    height: 2px;
+    width: 350px;
+    background-color: grey;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.inputLabel {
+    display: block;
+    margin-bottom: 8px;
+    color: #002b60;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.inputField {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.inputField:focus {
+    outline: none;
+    border-color: #002b60;
+}
+
+.loginButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.loginButton:hover {
+    background-color: #218838;
+}
