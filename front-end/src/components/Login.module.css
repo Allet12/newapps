@@ -41,7 +41,7 @@
 
 .loginDetails {
     color: #32324d;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 8px;
     display: inline-block;
@@ -70,7 +70,7 @@
     display: block;
     margin-bottom: 8px;
     color: #32324d;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -79,7 +79,7 @@
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 18px;
     box-sizing: border-box;
 }
 
@@ -113,39 +113,50 @@
     font-size: 14px;
     color: #32324d;
 }
+.sectionDivider {
+    height: 2px;
+    width: 100%;
+    background-color: grey;
+    margin: 20px 0;
+}
+
 
 .helpText {
     flex: 1;
     text-align: left;
 }
 
-.resetButton{
+.resetButton {
     background-color: white;
     border: 1px solid #ccc;
     color: #32324d;
     font-weight: 500;
     font-size: 14px;
-    padding: 6px 18px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s;
+    width: 100px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 6px 0;
 }
+
 .registerButton {
-    background-color: #476d80;
-    border: 1px solid #3d4670;
+    background-color: #74898a;
+    border: 1px solid #797d9f;
     color: #f3f3ff;
     font-weight: 500;
     font-size: 14px;
-    padding: 6px 18px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.2s;
+    width: 100px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 6px 0;
 }
 
-.resetButton:hover,
-.registerButton:hover {
-    background-color: #757575;
-}
+
 
 .footer {
     margin-top: 40px;

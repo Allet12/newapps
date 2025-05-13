@@ -99,16 +99,18 @@ const AfricanBankLogin = () => {
                         {loading ? 'Loading...' : 'Login'}
                     </button>
                 </form>
-
-                {/* New buttons below the login form */}
+                 <div className={styles.sectionDivider}></div>
                 <div className={styles.helpSection}>
                     <span className={styles.helpText}>Forgot login details?</span>
                     <button className={styles.resetButton}>Reset</button>
                 </div>
+                <div className={styles.sectionDivider}></div>
+
                 <div className={styles.helpSection}>
                     <span className={styles.helpText}>Don’t have an account?</span>
                     <button className={styles.registerButton}>Register</button>
                 </div>
+
             </div>
 
             {/* Footer */}
