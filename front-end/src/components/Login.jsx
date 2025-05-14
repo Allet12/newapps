@@ -63,6 +63,7 @@ const AfricanBankLogin = () => {
                             value={credentials.username}
                             onChange={handleChange}
                             className={styles.inputField}
+                            placeholder="Username"
                             required
                         />
                     </div>
@@ -78,6 +79,7 @@ const AfricanBankLogin = () => {
                             className={styles.inputField}
                             inputMode="numeric"
                             maxLength="5"
+                            placeholder="PIN"
                             required
                         />
                     </div>
@@ -91,6 +93,7 @@ const AfricanBankLogin = () => {
                             value={credentials.password}
                             onChange={handleChange}
                             className={styles.inputField}
+                            placeholder="Password"
                             required
                         />
                     </div>
