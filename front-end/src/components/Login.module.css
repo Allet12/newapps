@@ -41,7 +41,7 @@
 
 .loginDetails {
     color: #32324d;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 8px;
     display: inline-block;
@@ -70,7 +70,7 @@
     display: block;
     margin-bottom: 8px;
     color: #32324d;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -79,7 +79,7 @@
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 14px;
     box-sizing: border-box;
 }
 
@@ -91,11 +91,11 @@
 .loginButton {
     width: 100%;
     padding: 12px;
-    background-color: #28a745;
+    background-color: #71b628;
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     margin-top: 10px;
@@ -103,7 +103,7 @@
 }
 
 .loginButton:hover {
-    background-color: #218838;
+    background-color: #0fec43;
 }
 .helpSection {
     display: flex;
@@ -142,7 +142,7 @@
 }
 
 .registerButton {
-    background-color: #74898a;
+    background-color: #405f60;
     border: 1px solid #797d9f;
     color: #f3f3ff;
     font-weight: 500;
