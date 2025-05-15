@@ -130,7 +130,7 @@
 .resetButton {
     background-color: white;
     border: 1px solid #ccc;
-    color: white;
+    color: #6680A0;
     font-weight: 500;
     font-size: 14px;
     border-radius: 1px;
@@ -144,6 +144,8 @@
 }
 .resetButton:hover {
        background-color: #6680A0;
+    color:white;
+    
 }
 .registerButton {
     background-color: #6680A0;
