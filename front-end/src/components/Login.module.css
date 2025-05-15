@@ -91,13 +91,14 @@
 .loginButton {
     width: 100%;
     padding: 10px;
-    background-color: #71b628;
+    background-color: #89bc47;
     color: white;
     border: none;
     border-radius: 1px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     cursor: pointer;
+    font-family:"Montserrat-Medium","Open Sans",sans-serif;
     margin-top: 10px;
     transition: background-color 0.2s;
 }
