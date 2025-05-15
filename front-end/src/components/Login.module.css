@@ -85,7 +85,7 @@
 
 .inputField:focus {
     outline: none;
-    color: #32324d;
+    color: #E5EA3F;
 }
 
 .loginButton {
@@ -162,7 +162,9 @@
     padding: 6px 0;
      font-family:"Montserrat-Medium","Open Sans",sans-serif;
 }
-
+.registerButton:hover {
+   background-color: #6680A0;  
+}
 
 
 .footer {
