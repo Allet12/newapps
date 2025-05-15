@@ -142,7 +142,7 @@
     padding: 6px 0;
      font-family:"Montserrat-Medium","Open Sans",sans-serif;
 }
-.resetButtton: Hover{
+.resetButtton:hover {
        background-color: #6680A0;
 }
 .registerButton {
