@@ -104,7 +104,7 @@
 }
 
 .loginButton:hover {
-    background-color: #71b628;
+    background-color: #5dc300;
 }
 .helpSection {
     display: flex;
@@ -141,9 +141,11 @@
     box-sizing: border-box;
     padding: 6px 0;
 }
-
+.resetButtton: Hover{
+       background-color: #6680A0;
+}
 .registerButton {
-    background-color: #4c6a8f;
+    background-color: #6680A0;
     border: 1px solid #797d9f;
     color: #fff;
     font-weight: 500;
